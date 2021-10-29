@@ -18,6 +18,9 @@ def about():
 @app.route("/donate")
 def donate():
     return render_template("donate.html")
+@app.route("/kwibuka")
+def document():
+    return render_template("kwibuka.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='icons/Icon-192.png') }}">
+        <title>UnitedForHumanity</title>
+        <style>
+            body {
+                text-align: center;
+                background-color: #252525;
+            }
+            iframe {
+                width: 800px;
+                height: 3100px;
+                border: none;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe src="{{ url_for('static', filename='files/kwibuka27.pdf') }}"></iframe>
+    </body>
+</html>

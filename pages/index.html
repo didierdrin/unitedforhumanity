@@ -58,10 +58,13 @@
                       <div class ="mediaDropdown">
                         <a href="#media" class="nav-link dropdown-toggle">Media</a>
                           <ul class="dropdown-menu mediaItems dropdown-menu-dark">
-                            <li><a href="#" class="dropdown-item">NewsTimes</a></li>
-                            <li><a href="#" class="dropdown-item">Hamilton Press</a></li>
-                            <li><a href="#" class="dropdown-item">Inyarwanda</a></li>
-                            <li><a href="kwibuka" target="_blank" class="dropdown-item">Kwibuka</a></li>
+                            <li><a target="blank" href="https://mobile.igihe.com/diaspora/article/toronto-brig-gen-nyakarundi-yibukije-urubyiruko-kutirara-ngo-rwibagirwe-kubaka" class="dropdown-item">IGIHE</a></li>
+                            <li><a target="blank" href="https://www.newtimes.co.rw/entertainment/ngarambe-represent-rwanda-miss-face-humanity" class="dropdown-item">NEW TIMES</a></li>
+                            <li><a target="blank"href="https://www.thespec.com/news/hamilton-region/2018/04/22/featured-photos-rwanda-remembrance.html" class="dropdown-item">THE HAMILTON SPEC</a></li>
+                            <li><a target="blank" href="https://inyarwanda.com/inkuru/96830/ngarambe-rita-umunyarwandakazi-uri-mu-bakobwa-bahataniye-ikamba-rya-miss-face-of-humanity--96830.html" class="dropdown-item">INYARWANDA</a></li>
+                            <li><a target="blank" href="https://bloorwest.snapd.com/events/view/1282880" class="dropdown-item">SNAPD TORONTO</a></li>
+                            <li><a target="blank" href="http://expressnews.rw/is-it-still-worth-to-risk-lives-as-patriotism-gesture-brig-gen-vincent-nyakarundi-unlighted-youth-in-toronto/" class="dropdown-item">THE EXPRESS NEWS</a></li>
+                            <li><a href="kwibuka" target="_blank" class="dropdown-item">KWIBUKA</a></li>
                           </ul>
                       </div>
                   </li>
@@ -72,9 +75,11 @@
                   <div class ="mediaDropdown">
                     <a href="#media" class="nav-link dropdown-toggle">Partners</a>
                       <ul class="dropdown-menu mediaItems dropdown-menu-dark">
-                        <li><a href="#" class="dropdown-item">NewsTimes</a></li>
-                        <li><a href="#" class="dropdown-item">Hamilton Press</a></li>
-                        <li><a href="#" class="dropdown-item">Inyarwanda</a></li>
+                        <li><a target="blank" href="https://www.rwandaincanada.gov.rw/diaspora" class="dropdown-item">Rwanda In Canada</a></li>
+                        <li><a target="blank" href="https://www.carytoronto.com/" class="dropdown-item">CARY Toronto</a></li>
+                        <li><a target="blank" href="https://rchc.ca/" class="dropdown-item">RCHC</a></li>
+                        <li><a target="blank" href="http://www.icirwanda.org" class="dropdown-item">ICI Rwanda</a></li>
+                        <li><a target="blank" href="https://instagram.com/our_past__initiative?utm_medium=copy_link" class="dropdown-item">Our Past</a></li>
                       </ul>
                   </div>
               </li>
@@ -116,7 +121,9 @@
               <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="{{ url_for('static', filename='img/remote.png') }}" role="img" aria-label="Placeholder: Team" preserveAspectRatio="xMidYMid slice" focusable="false"/>
   
               <div class="card-body">
-                <p class="card-text">This is our auxiliary association which is utilized as a course to arrive at far off spots to support mankind by providing for the penniless population.</p>
+                <div style="height: 150px;">
+                  <p class="card-text">This is our auxiliary association which is utilized as a course to arrive at far off spots to support mankind by providing for the penniless population.</p>
+                </div>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Board Members</button>
@@ -133,10 +140,12 @@
               <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{ url_for('static', filename='img/donateJpg.jpg') }}" role="img" aria-label="Placeholder: Donate" preserveAspectRatio="xMidYMid slice" focusable="false"/>
   
               <div class="card-body">
-                <p class="card-text">This pandemic left numerous in hardships, there's some in the most exceedingly awful. A versatile stage changing the manner in which assets are dissipated among the destitute families and youngsters is a reasonable arrangement.<br><a style="font-size: 8px;">|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;||&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;||&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|</a></p>
+                <div style="height: 200px;">
+                  <p class="card-text">This pandemic left numerous in hardships, there's some in the most exceedingly awful. A versatile stage changing the manner in which assets are dissipated among the destitute families and youngsters is a reasonable arrangement.<br><a style="font-size: 8px;">|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;||&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;||&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|</a></p> 
+                </div>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Your Hand</button>
+                    <button onclick="window.location.href='about'" type="button" class="btn btn-sm btn-outline-secondary">Your Hand</button>
                     <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Feedback</button> -->
                   </div>
                   <small class="text-muted">Copyright &copy 2022</small>
@@ -152,7 +161,9 @@
               <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{ url_for('static', filename='img/task.svg') }}" role="img" aria-label="Placeholder: Our Mission" preserveAspectRatio="xMidYMid slice" focusable="false"/>
   
               <div class="card-body">
-                <p class="card-text"><b>Our mission</b> is to direct research and produce activity to forestall and end grave maltreatments of common liberties and to request human equity for those whose privileges have been abused.<br><br><a style="font-size: 8px;">|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;||&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;||&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|</a></p>
+                <div style="height: 210px;">
+                  <p class="card-text"><b>Our mission</b> is to direct research and produce activity to forestall and end grave maltreatments of common liberties and to request human equity for those whose privileges have been abused.<br><br><a style="font-size: 8px;">|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;||&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;||&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|&nbsp;-&nbsp;|</a></p>
+                </div>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
                     <!-- <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
@@ -172,7 +183,7 @@
   <footer class="text-muted py-5">
     <div class="container">
       <p class="mb-1">United for Humanity &copy;, Humanity as One. This is a deeper concept than we mostly think it is and also crucial in our daily lives.</p>
-      <p class="mb-0">New here? <a href="/">Visit thecypershow</a> or read our <a href="/docs/5.0/getting-started/introduction/">frequently asked questions</a>.</p>
+      <p class="mb-0">New here? <a target="blank" href="https://www.youtube.com/channel/UCIPwAzceRG3f0pqIU-Qr7nQ">Visit thecypershow</a> or read our <a href="about">frequently asked questions</a>.</p>
     </div>
   </footer>
   

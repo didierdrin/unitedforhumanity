@@ -1,0 +1,30 @@
+<!-- Gallery window -->
+{% extends "base.html" %}
+{% block title %}gallery window{% endblock %}
+{% block content %}
+<div style="position: absolute; height: 500px;">
+    <div class="header">
+        <h1>Photo gallery</h1>
+    </div>
+    <div class="slider">
+        <div id="block-left"></div>
+        <div id="block-main"></div>
+        <div id="block-right"></div>
+    </div>
+    <div class="buttons">
+        <p>Add to the favourites</p>
+        <p>Remove from the favorites</p>
+    </div>
+    <div class="message" style="display: none">
+        <p style="font-size: 2rem">Do you want to clear the favourites?</p>
+        <div class="buttons">
+            <p>Clear</p>
+            <p>Close</p>
+        </div>
+    </div>
+    <div class="favorites"></div>
+</div>
+<script>
+    
+</script>
+{% endblock %}

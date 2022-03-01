@@ -22,5 +22,9 @@ def donate():
 def document():
     return render_template("kwibuka.html")
 
+@app.route("/gallerywindow")
+def gallerywindow():
+    return render_template("gallerywindow.html")
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)

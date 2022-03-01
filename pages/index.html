@@ -32,16 +32,22 @@
         display:block;
       }
       #navigationBar {
-        display:block;
+        display: fixed;
       }
+      .scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
     </style>
 
   </head>
   <body>
-      <!-- Navbar -->
-    <nav id="navigationBar" class="navbar navbar-expand-lg bg- navbar-dark py-3 fixed-top">
+      <!-- Navbar: Hide on scroll down --> 
+    <nav class="autohide navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
       <div class="container">
-          <a href="/" class="navbar-brand" style="color: #6ecfb7">United For Humanity</a>
+          <a href="/" class="navbar-brand fs-3" style="color: #6ecfb7">United For Humanity</a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
               <span class="navbar-toggler-icon"></span>
@@ -158,7 +164,7 @@
  
           <div class="col">
             <div class="card shadow-sm">
-              <img class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{ url_for('static', filename='img/task.svg') }}" role="img" aria-label="Placeholder: Our Mission" preserveAspectRatio="xMidYMid slice" focusable="false"/>
+              <img style="overflow-y: hidden;" class="bd-placeholder-img card-img-top" width="100%" height="400px" src="{{ url_for('static', filename='events/events_2.jpg') }}" role="img" aria-label="Placeholder: Our Mission" preserveAspectRatio="xMidYMid slice" focusable="false"/>
   
               <div class="card-body">
                 <div style="height: 210px;">
@@ -247,17 +253,37 @@
         });
     });
 </script>
-<script>
-  // When the user scrolls down 50px from the top of the document, resize the header's font size
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("nav").style.fontSize = "30px";
-    } else {
-      document.getElementById("nav").style.fontSize = "90px";
-    }
-  }
+
+  <!-- NavBar autohide JS -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+
+el_autohide = document.querySelector('.autohide');
+
+// add padding-top to bady (if necessary)
+navbar_height = document.querySelector('.navbar').offsetHeight;
+document.body.style.paddingTop = navbar_height + 'px';
+
+if(el_autohide){
+  var last_scroll_top = 0;
+  window.addEventListener('scroll', function() {
+        let scroll_top = window.scrollY;
+       if(scroll_top < last_scroll_top) {
+            el_autohide.classList.remove('scrolled-down');
+            el_autohide.classList.add('scrolled-up');
+        }
+        else {
+            el_autohide.classList.remove('scrolled-up');
+            el_autohide.classList.add('scrolled-down');
+        }
+        last_scroll_top = scroll_top;
+  }); 
+  // window.addEventListener
+}
+// if
+
+}); 
+// DOMContentLoaded  end
   </script>
   </body>
 </html>
